@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_types",
+  "info": {
+    "name": "product_type"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "product_type_name": {
+      "type": "string"
+    },
+    "product": {
+      "via": "product_type",
+      "model": "product"
+    }
+  }
+}

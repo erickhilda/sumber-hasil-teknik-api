@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "suppliers",
+  "info": {
+    "name": "supplier"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "supplier_name": {
+      "type": "string"
+    },
+    "supplier_phone": {
+      "type": "biginteger"
+    },
+    "product": {
+      "via": "supplier",
+      "model": "product"
+    }
+  }
+}
